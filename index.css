@@ -118,6 +118,7 @@ nav ul li:hover {
 .header-bottom-side-left h2 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
+    font-weight: normal;
 }
 
 .header-bottom-side-left p {
@@ -225,6 +226,10 @@ main p {
     display: webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+}
+
+main h2 {
+    font-weight: normal;
 }
 
 .shop {
