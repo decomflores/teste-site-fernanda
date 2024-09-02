@@ -116,7 +116,7 @@ nav ul li:hover {
 }
 
 .header-bottom-side-left h2 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
 }
 
@@ -151,6 +151,10 @@ nav ul li:hover {
 
 .header-bottom-side-right img {
     width: 80%;
+}
+
+.header-inner-content p {
+    font-size: 24px;
 }
 
 /* Media Queries */
@@ -211,8 +215,16 @@ nav ul li:hover {
     margin-bottom: 12px;
 }
 
-.texto1 {
-    margin: 0 auto 12px;
+main p {
+    align-items: center;
+    margin: 0 40px 12px 40px;
+    font-size: 18px;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    display: webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .shop {
@@ -223,6 +235,43 @@ nav ul li:hover {
     padding: 1rem; 
 }
 
+.shop button {
+    background-color: #aa3055;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    border-radius: 9999px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s;
+    margin: 15px 15px 15px 15px;
+}
+
+.shop button:hover {
+    background-color: #630744;
+    transitiom: all 0.2s;
+}
+
+.img-shop img {
+    max: width 400px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+    justify-content: space-between;
+    margin: 10px 5px 10px 5px;
+}
+
+#link-shop {
+    color: inherit;
+    text-decoration: none;
+}
+
+.img-shop img:hover {
+    transform: scale(108%);
+    transition: all 0.4s;
+}
+
 .page-inner-content {
     max-width: 1366px;
     margin: 0 auto;
@@ -231,7 +280,7 @@ nav ul li:hover {
 .section-title {
     text-align: center;
     margin-top: 4rem;
-    font-size: 1.8rem;
+    font-size: 36px;
 }
 
 .subtitle-underline {
@@ -239,7 +288,7 @@ nav ul li:hover {
     height: 5px;
     background-color: #aa3055;
     border-radius: 9999px;
-    margin: 8px auto 0 auto;
+    margin: 8px auto 10px auto;
 }
 
 #link-topo {
