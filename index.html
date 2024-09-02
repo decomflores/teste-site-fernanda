@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste | Ecommerce</title>
     <link rel="stylesheet" href="index.css" />
-</head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    </head>
 <body>
     <div class="navbar show-menu">
         <div class="cabeçalho">
@@ -19,8 +23,6 @@
                 </ul>
             </nav>
             <div class="nav-icon-container">
-                <a href="https://www.instagram.com/afernandaarantes/"><img src="./midias/instagram_logo.png" class="shop-button"/></a>
-                <p><a id="link-instagram" href="https://www.instagram.com/afernandaarantes/">@afernandaarantes</a></p>
                 <img src="./midias/menu.png" class="menu-button" />
             </div>
         </div>
@@ -45,6 +47,19 @@
 
     <!-- Conteúdo Principal -->
     <main>
+        <div class="shop" id="shop-redirect">
+            <h2 class="section-title">Conhece nossa Lojinha?</h2>
+            <div class="subtitle-underline"></div>
+            <p class="texto1">Temos camisetas fofas e divertidas para você usar aonde quiser<br />
+                <div class="img-shop">
+                    <img id="prod1" src="./midias/shop/simula-leo.png" />
+                    <img id="prod2" src="./midias/shop/simula-leo.png" />
+                    <img id="prod3" src="./midias/shop/simula-pongo.png" />
+                    <img id="prod4" src="./midias/shop/simula-pongo.png" />
+                </div>
+                <button><a id="link-shop" href="#">Vá para a loja &#8594</a></button>
+            </p>
+        </div>
         <div id="about-redirect" class="about" >
             <h2 class="section-title">Sobre mim</h2>
             <div class="subtitle-underline"></div>
@@ -64,19 +79,6 @@
                 Em seu primeiro show solo, fala sobre sua mudança de país, 
                 a vida de casada e “mãe de pet” além da necessidade de virar a chave diante de toda a loucura do mundo que estamos vivendo, 
                 tudo isso, é claro com muito deboche e ironia MADE IN BRAZIL.
-            </p>
-        </div>
-        <div class="shop" id="shop-redirect">
-            <h2 class="section-title">Conhece nossa Lojinha?</h2>
-            <div class="subtitle-underline"></div>
-            <p class="texto1">Temos camisetas fofas e divertidas para você usar aonde quiser<br />
-                <div class="img-shop">
-                    <img id="prod1" src="./midias/shop/simula-leo.png" />
-                    <img id="prod2" src="./midias/shop/simula-leo.png" />
-                    <img id="prod3" src="./midias/shop/simula-pongo.png" />
-                    <img id="prod4" src="./midias/shop/simula-pongo.png" />
-                </div>
-                <button><a id="link-shop" href="#">Vá para a loja &#8594</a></button>
             </p>
         </div>
 
@@ -105,6 +107,12 @@
             </div>
         </div>
     </main>
+    <footer>
+        <div>
+            <a href="https://www.instagram.com/afernandaarantes/"><img src="./midias/instagram_logo.png" class="shop-button"/></a>
+            <p><a id="link-instagram" href="https://www.instagram.com/afernandaarantes/">@afernandaarantes</a></p>
+        </div>
+    </footer>
 
     <script>
         const navbar = document.querySelector(".navbar");

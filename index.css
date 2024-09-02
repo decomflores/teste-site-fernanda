@@ -5,8 +5,9 @@
 }
 
 body {
-    font-family: fantasy;
-    background: url(./midias/background.png);
+    font-family: "Rubik Doodle Shadow", system-ui;
+    background: url(./midias/background-3.png);
+    background-size: 100% 100%;
 }
 
 /* navbar */
@@ -18,8 +19,7 @@ body {
 }
 
 .navbar {
-    background-color: #fbe3eb;
-    border: #c0225f solid;
+    border: #f24171 solid;
     padding: 1rem;
     position: sticky;
     top: 0;
@@ -127,7 +127,7 @@ nav ul li:hover {
 }
 
 .header-bottom-side-left button {
-    background-color: #aa3055;
+    background-color: #f24171;
     border: none;
     cursor: pointer;
     padding: 0.8rem 3.8rem;
@@ -241,7 +241,7 @@ main h2 {
 }
 
 .shop button {
-    background-color: #aa3055;
+    background-color: #f24171;
     border: none;
     cursor: pointer;
     padding: 0.8rem 3.8rem;
@@ -291,7 +291,7 @@ main h2 {
 .subtitle-underline {
     width: 100px;
     height: 5px;
-    background-color: #aa3055;
+    background-color: #1c2f40;
     border-radius: 9999px;
     margin: 8px auto 10px auto;
 }
@@ -370,4 +370,9 @@ main h2 {
 .form button:hover {
     background-color: #630744;
     transition: all 0.2s; 
+}
+
+footer img {
+    max-width: 40px;
+    display: flex;
 }
