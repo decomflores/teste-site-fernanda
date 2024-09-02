@@ -6,7 +6,7 @@
 
 body {
     font-family: "Rubik Doodle Shadow", system-ui;
-    background: url(./midias/background-3.png);
+    background: url(./midias/background-5.png);
     background-size: 100% 100%;
 }
 
@@ -103,6 +103,25 @@ nav ul li:hover {
     display: none;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+    margin: 0 auto;
+    z-index: -10;
+}
+
+header .header-bottom-side-left {
+    position: relative;
+}
+
 .header-bottom-side {
     display: flex;
     align-items: center;
@@ -136,22 +155,11 @@ nav ul li:hover {
     font-weight: 500;
     font-size: 1rem;
     transition: all 0.2s;
-    margin-bottom: 15px;
+    margin: 0 auto;
 }
 
 .header-bottom-side-left button:hover {
     background-color: #630744;
-}
-
-    .header-bottom-side-right {
-    flex-basis: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header-bottom-side-right img {
-    width: 80%;
 }
 
 .header-inner-content p {
