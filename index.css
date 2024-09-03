@@ -21,28 +21,39 @@
 
 .logo-site img {
     width: 60%;
-    margin: -70px 0 -80px 60px;
+    margin: -60px 0 -70px 60px;
 }
 
 body {
-    background: url(./midias/background-5.png);
-    background-size: 100% 100%;
-    color: #1cf40;
+    background: url(./midias/background-6.png);
+    color: #fff;
 }
 
 /* navbar */
 
 .cabeçalho {
     max-width: 1366px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.navbar h1 {
+    font-family: QuickJerk;
+}
+
+.navbar h1 span {
+    color: #f24171;
+}
+
+.navbar .cabeçalho {
+    align-items: center;
+    justify-content: space-between;
 }
 
 .navbar {
-    background-image: url(./midias/background-5.png);
+    background-image: url(./midias/background-6.png);
     border: #f24171 solid;
     padding: 1rem;
     position: sticky;
+    border-radius: 20px;
     top: 0;
     box-shadow: 10x 0x 10px #2c2c2c;
     z-index: 99;
@@ -56,9 +67,9 @@ body {
 }
 
 nav ul li a {
-    color: inherit;
+    color: #fff;
     text-decoration: none;
-    font-family: Inda;
+    font-family: QuickJerk;
     font-size: 24px;
 }
 
@@ -119,6 +130,15 @@ header img {
     max-width: 100%;
 }
 
+header .header-image-left {
+    margin: -250px -150px -200px -100px;
+    max-width: 1200px;
+}
+
+header .header-image-right{
+    max-width: 700px;
+}
+
 header {
     font-family: ChildBold;
 }
@@ -150,7 +170,21 @@ header .header-bottom-side-left {
     margin-bottom: 1.5rem;
 }
 
-.header-bottom-side-left button {
+.agenda-link h2 {
+    font-size: 48px;
+    margin: auto auto 10px auto;
+}
+
+.agenda-link {
+    text-align: center;
+}
+
+.agenda-link a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.agenda-link button {
     background-color: #f24171;
     border: none;
     cursor: pointer;
@@ -162,7 +196,7 @@ header .header-bottom-side-left {
     margin: 0 auto;
 }
 
-.header-bottom-side-left button:hover {
+.agenda-link button:hover {
     background-color: #630744;
     transition: 0.2s;
 }
@@ -193,7 +227,7 @@ header .header-bottom-side-left {
 
     nav{
         position: absolute;
-        background-color: #fbe3eb;
+        background-color: #1c2f40;
         width: 100%;
         top: 46px;
         display: none;
@@ -296,7 +330,7 @@ main h2 {
 .subtitle-underline {
     width: 100px;
     height: 5px;
-    background-color: #1c2f40;
+    background-color: #f24171;
     border-radius: 9999px;
     margin: 8px auto 10px auto;
 }
@@ -406,7 +440,14 @@ main h2 {
     transition: 0.2s;
 }
 
-.bio {
+.bio h2 {
+    font-size: 46px;
+    margin: 20px auto;
+}
+
+.bio p {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .bio header button {
@@ -419,7 +460,7 @@ main h2 {
     font-weight: 500;
     font-size: 1rem;
     transition: all 0.2s;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
 }
 
 .bio header a {
