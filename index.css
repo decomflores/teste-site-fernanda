@@ -1,13 +1,33 @@
+@font-face {
+    font-family: QuickJerk;
+    src: url(./REFS/FONTS/quick_end_jerk.ttf);
+}
+
+@font-face {
+    font-family: Inda;
+    src: url(./REFS/FONTS/IdayaraRegular-nRaVP.ttf);
+}
+
+@font-face {
+    font-family: ChildBold;
+    src: url(./REFS/FONTS/Childhood-Bold.otf);
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+.logo-site img {
+    width: 60%;
+    margin: -70px 0 -80px 60px;
+}
+
 body {
-    font-family: "Rubik Doodle Shadow", system-ui;
     background: url(./midias/background-5.png);
     background-size: 100% 100%;
+    color: #1cf40;
 }
 
 /* navbar */
@@ -19,6 +39,7 @@ body {
 }
 
 .navbar {
+    background-image: url(./midias/background-5.png);
     border: #f24171 solid;
     padding: 1rem;
     position: sticky;
@@ -34,18 +55,11 @@ body {
     position: relative;
 }
 
-.logo {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #c0225f;
-}
-
-.logo span {
-    color: #2c2c2c;
-}
-
 nav ul li a {
     color: inherit;
     text-decoration: none;
+    font-family: Inda;
+    font-size: 24px;
 }
 
 nav ul {
@@ -68,12 +82,6 @@ nav ul {
     margin-right: 1rem;
 }
 
-#link-instagram {
-    color: inherit;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
 .nav-icon-container p:hover {
     transform: translateY(-2px);
     transition: all 0.2s;
@@ -81,7 +89,7 @@ nav ul {
 }
 
 nav ul li {
-    color: #2c2c2c;
+    color: #1c2f40;
     justify-content: space-between;
     margin-right: 1.5rem;
     cursor: pointer;
@@ -93,10 +101,6 @@ nav ul li:hover {
     font-weight: bold;
 }
 
-.shop-button:hover {
-    transform: translateY(-3px);
-}
-
 /* Header */
 
 .menu-button {
@@ -105,7 +109,6 @@ nav ul li:hover {
 
 header {
     display: flex;
-    flex-direction: column;
     align-items: center;
     margin: 0 auto;
     justify-content: center;
@@ -114,8 +117,10 @@ header {
 
 header img {
     max-width: 100%;
-    margin: 0 auto;
-    z-index: -10;
+}
+
+header {
+    font-family: ChildBold;
 }
 
 header .header-bottom-side-left {
@@ -154,12 +159,12 @@ header .header-bottom-side-left {
     color: #fff;
     font-weight: 500;
     font-size: 1rem;
-    transition: all 0.2s;
     margin: 0 auto;
 }
 
 .header-bottom-side-left button:hover {
     background-color: #630744;
+    transition: 0.2s;
 }
 
 .header-inner-content p {
@@ -212,16 +217,8 @@ header .header-bottom-side-left {
 
 /* Conteúdo Principal */
 
-.about {
-    text-align: center;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem; 
-}
-
-.sobre-mim {
-    margin-bottom: 12px;
+main {
+    font-family: ChildBold;
 }
 
 main p {
@@ -307,7 +304,7 @@ main h2 {
 #link-topo {
     text-decoration: none;
     color: #fff;
-    background-color: #aa3055;
+    background-color: #f24171;
     padding: 10px;
     position: fixed;
     right: 6px;
@@ -369,7 +366,7 @@ main h2 {
 .form button {
     display: block;
     padding: 1rem;
-    background-color: #aa3055;
+    background-color: #f24171;
     color: #fff;
     border-radius: 9999px;
     border: none;
@@ -380,7 +377,58 @@ main h2 {
     transition: all 0.2s; 
 }
 
-footer img {
-    max-width: 40px;
+.links-rodape > div {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-rodape img {
+    max-width: 30px;
+    margin: 0 12px;
+}
+
+#link-instagram {
+    color: inherit;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: ChildBold;
+}
+
+.links-rodape p:hover {
+    transform: translateY(-3px);
+    transition: 0.2s;
+}
+
+.links-rodape img:hover {
+    transform: translateY(-4px);
+    transition: 0.2s;
+}
+
+.bio {
+}
+
+.bio header button {
+    background-color: #f24171;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    border-radius: 9999px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s;
+    margin: 0 auto;
+}
+
+.bio header a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.bio header button:hover {
+    background-color: #630744;
+    transition: all 0.2s; 
 }
