@@ -37,6 +37,7 @@ body {
 
 .navbar h1 {
     font-family: QuickJerk;
+    font-optical-sizing: auto;
 }
 
 .navbar h1 span {
@@ -69,7 +70,8 @@ body {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-family: QuickJerk;
+    font-family: "Gloock", serif;
+    font-optical-sizing: auto;
     font-size: 24px;
 }
 
@@ -140,7 +142,8 @@ header .header-image-right{
 }
 
 header {
-    font-family: ChildBold;
+    font-family: "Gloock", serif;
+    font-optical-sizing: auto;
 }
 
 header .header-bottom-side-left {
@@ -252,7 +255,8 @@ header .header-bottom-side-left {
 /* Conteúdo Principal */
 
 main {
-    font-family: ChildBold;
+    font-family: "Gloock", serif;
+    font-optical-sizing: auto;
 }
 
 main p {
@@ -427,7 +431,8 @@ main h2 {
     color: inherit;
     text-decoration: none;
     margin-right: 10px;
-    font-family: ChildBold;
+    font-family: "Gloock", serif;
+    font-optical-sizing: auto;
 }
 
 .links-rodape p:hover {
