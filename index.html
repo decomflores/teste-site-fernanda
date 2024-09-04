@@ -8,39 +8,35 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 
     </head>
 <body>
     <div class="navbar show-menu">
-        <div class="cabeçalho">
-            <div class="logo-escrito">
+            <div class="menu-lista">
+                <nav>
+                    <ul>
+                        <li><a href="#bio-redirect">Bio</a></li>                    
+                        <li><a href="https://casadeartistas.com.br/fernandaarantes/">Agenda</a></li>
+                        <li><a href="#shop-redirect">Loja</a></li>
+                        <li><a href="#form-redirect">Contato</a></li>                    
+                    </ul>
+                </nav>
+            </div>           
+            <div class="logo-escrito" style="text-align:center">
                 <h1>FERNANDA <span>ARANTES</span></h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="./bio.html">Bio</a></li>                    
-                    <li><a href="https://casadeartistas.com.br/fernandaarantes/">Agenda</a></li>
-                    <li><a href="#shop-redirect">Loja</a></li>
-                    <li><a href="#form-redirect">Contato</a></li>                    
-                </ul>
-            </nav>
+            </div> 
             <div class="nav-icon-container">
                 <img src="./midias/menu.png" class="menu-button" />
             </div>
-        </div>
     </div>
 
     <header>
@@ -62,20 +58,41 @@
     <main>
         <div class="agenda-link">
             <h2>Confira a agenda de Shows</h2>
-            <button><a href="https://casadeartistas.com.br/fernandaarantes/">Agenda</a></button>
+            <button><a href="https://casadeartistas.com.br/fernandaarantes/">Agenda &#8594</a></button>
         </div>
         <div class="shop" id="shop-redirect">
             <h2 class="section-title">Conhece nossa Lojinha?</h2>
             <div class="subtitle-underline"></div>
             <p class="texto1">Temos camisetas fofas e divertidas para você usar aonde quiser<br />
                 <div class="img-shop">
-                    <img id="prod1" src="./midias/shop/simula-leo.png" />
+                    <img id="prod1" src="./midias/shop/leo-camisa-final-1.png" />
                     <img id="prod2" src="./midias/shop/simula-leo.png" />
-                    <a href="https://sitesestilizados.lojavirtualnuvem.com.br/produtos/camiseta-nao-me-incomoda/"><img id="prod3" src="./midias/shop/simula-pongo.png" /></a>
+                    <a href="https://sitesestilizados.lojavirtualnuvem.com.br/produtos/camiseta-nao-me-incomoda/"><img id="prod3" src="./midias/shop/pongo-camisa-final-1.png" /></a>
                     <img id="prod4" src="./midias/shop/simula-pongo.png" />
                 </div>
                 <button><a id="link-shop" href="https://sitesestilizados.lojavirtualnuvem.com.br/">Vá para a loja &#8594</a></button>
             </p>
+        </div>
+        <div class="bio" id="bio-redirect">
+            <h2>Sobre mim</h2>
+            <div class="subtitle-underline"></div>
+            <p class="texto1">Fernanda Arantes é atriz, roteirista, comediante, veterinária e principalmente MÃE DO LEONARDO E PONGO.<br />
+                <br />
+                Além de uma brasileira perdida na Europa.
+                <br />
+                <br />
+                Atua no teatro desde os quinze anos, e em 2018 iniciou sua carreira no standup comedy, 
+                desde então já se apresentou nas principais casas de comédia de todo Brasil e agora morando na Alemanha, 
+                trouxe para a Europa o humor ácido que só o Brasil é capaz de produzir.
+                <br />
+                <br />
+                Em suas redes sociais, produz conteúdo semanal de humor sobre a vida do imigrante brasileiro e soma mais de 1 milhão de seguidores em seu Instagram e Tiktok.
+                <br />
+                <br />
+                Em seu primeiro show solo, fala sobre sua mudança de país, 
+                a vida de casada e “mãe de pet” além da necessidade de virar a chave diante de toda a loucura do mundo que estamos vivendo, 
+                tudo isso, é claro com muito deboche e ironia MADE IN BRAZIL.
+            </p>      
         </div>
         <div>
             <div class="form-contato" id="form-redirect">
@@ -96,16 +113,24 @@
                     <textarea name="message" placeholder="Escreva aqui" id="mensagem" required></textarea>
                     <input type="hidden" name="captcha" value="false" />
                     <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#" />
-                    <button type="submit">Enviar</button>
+                    <button id="send-button" type="submit">Enviar</button>
                 </form>
                 </div>
             </div>
         </div>
     </main>
     <footer class="links-rodape">
-        <div>
-            <a href="https://www.instagram.com/afernandaarantes/"><img src="./midias/instagram_logo.png" /></a>
+        <div class="links-instagram">
+            <a href="https://www.instagram.com/afernandaarantes/"><img src="./midias/insta-rodape-branco.png" /></a>
             <p><a id="link-instagram" href="https://www.instagram.com/afernandaarantes/">@afernandaarantes</a></p>
+        </div>
+        <div class="links-tiktok">
+            <a href="https://www.tiktok.com/@afernandaarantes?_t=8pRiz0vcwxp&_r=1 "><img src="./midias/tiktok-rodape.png"></a>
+            <p><a id="link-tktk" href="https://www.tiktok.com/@afernandaarantes?_t=8pRiz0vcwxp&_r=1 ">@afernandaarantes</a></p>
+        </div>
+        <div class="links-youtube">
+            <a href="https://www.youtube.com/@fernandaarantes5818"><img src="./midias/yt-rodape-ver.png"></a>
+            <p><a id="link-yt" href="https://www.youtube.com/@fernandaarantes5818">@fernandaarantes5818</a></p>
         </div>
     </footer>
 

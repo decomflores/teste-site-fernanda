@@ -19,11 +19,6 @@
     margin: 0;
 }
 
-.logo-site img {
-    width: 60%;
-    margin: -60px 0 -70px 60px;
-}
-
 body {
     background: url(./midias/background-6.png);
     color: #fff;
@@ -38,15 +33,12 @@ body {
 .navbar h1 {
     font-family: QuickJerk;
     font-optical-sizing: auto;
+    text-shadow: 7px 6px 4px black;
+    margin-right: 260px;
 }
 
 .navbar h1 span {
     color: #f24171;
-}
-
-.navbar .cabeçalho {
-    align-items: center;
-    justify-content: space-between;
 }
 
 .navbar {
@@ -57,45 +49,36 @@ body {
     border-radius: 20px;
     top: 0;
     box-shadow: 10x 0x 10px #2c2c2c;
-    z-index: 99;
 }
 
-.navbar > div {
+.navbar {
     display: flex;
+    text-align: center;
+    justify-content: space-between;
+    text-align: center;
     align-items: center;
-    justify-content: space-evenly;
-    position: relative;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-family: 'Concert One';
+    font-family: "Bangers";
     font-optical-sizing: auto;
     font-size: 24px;
 }
 
-nav ul {
+.navbar ul {
     display: flex;
     list-style: none;
     align-items: center;
 }
 
-.nav-icon-container {
-    display: flex;
-    align-items: center;
-}
-
 .nav-icon-container img {
-    width: 30px;
+    width: 40px;
     cursor: pointer;
 }
 
-.nav-icon-container img:first-child{
-    margin-right: 1rem;
-}
-
-.nav-icon-container p:hover {
+.nav-icon-container img:hover {
     transform: translateY(-2px);
     transition: all 0.2s;
     font-weight: bold;
@@ -114,11 +97,11 @@ nav ul li:hover {
     font-weight: bold;
 }
 
-/* Header */
-
 .menu-button {
-    display: none;
+    display: ;
 }
+
+/* header */
 
 header {
     display: flex;
@@ -188,6 +171,8 @@ header .header-bottom-side-left {
 }
 
 .agenda-link button {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
     background-color: #f24171;
     border: none;
     cursor: pointer;
@@ -255,8 +240,12 @@ header .header-bottom-side-left {
 /* Conteúdo Principal */
 
 main {
-    font-family: "Gloock", serif;
+    font-family: "Fjalla One", sans-serif;
     font-optical-sizing: auto;
+}
+
+main h2 {
+    font-family: "Bangers", system-ui;
 }
 
 main p {
@@ -284,6 +273,8 @@ main h2 {
 }
 
 .shop button {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
     background-color: #f24171;
     border: none;
     cursor: pointer;
@@ -302,8 +293,8 @@ main h2 {
 }
 
 .img-shop img {
-    max: width 400px;
-    max-height: 350px;
+    max: width 500px;
+    max-height: 450px;
     width: auto;
     height: auto;
     justify-content: space-between;
@@ -337,6 +328,26 @@ main h2 {
     background-color: #f24171;
     border-radius: 9999px;
     margin: 8px auto 10px auto;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bio h2 {
+    font-size: 46px;
+    margin: 20px auto 0;
+}
+
+.bio p {
+    font-size: 24px;
+    margin: 20px 0;
+    text-align: center
+    margin: 0 auto;
 }
 
 #link-topo {
@@ -373,6 +384,12 @@ main h2 {
     width: 100%;
 }
 
+#send-button {
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
 
 .form label {
     line-height: 1;
@@ -415,24 +432,15 @@ main h2 {
     transition: all 0.2s; 
 }
 
+footer p {
+    color: white;
+}
+
 .links-rodape > div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.links-rodape img {
-    max-width: 30px;
-    margin: 0 12px;
-}
-
-#link-instagram {
-    color: inherit;
-    text-decoration: none;
-    margin-right: 10px;
-    font-family: "Gloock", serif;
-    font-optical-sizing: auto;
 }
 
 .links-rodape p:hover {
@@ -445,36 +453,38 @@ main h2 {
     transition: 0.2s;
 }
 
-.bio h2 {
-    font-size: 46px;
-    margin: 20px auto;
-}
-
-.bio p {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.bio header button {
-    background-color: #f24171;
-    border: none;
-    cursor: pointer;
-    padding: 0.8rem 3.8rem;
-    border-radius: 9999px;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: all 0.2s;
-    margin: 0 auto 20px auto;
-}
-
-.bio header a {
-    color: inherit;
-    text-decoration: none;
+.links-instagram img {
+    max-width: 50px;
     margin: 0 auto;
 }
 
-.bio header button:hover {
-    background-color: #630744;
-    transition: all 0.2s; 
+#link-instagram,
+#link-tktk,
+#link-yt {
+    color: inherit;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: "Fjalla One";
+    font-optical-sizing: auto;
+}
+
+.links-tiktok img {
+    max-width: 30px;
+    margin: 0 10px;
+}
+
+.links-youtube img{
+    max-width: 27px;
+    margin: 0 10px;
+}
+
+.links-rodape {
+    background-image: url(./midias/background-6.png);
+    border: #f24171 solid;
+    padding: 1rem;
+    position: sticky;
+    border-radius: 20px;
+    top: 0;
+    box-shadow: 10x 0x 10px #2c2c2c;
+    z-index: 99;
 }
