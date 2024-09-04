@@ -34,7 +34,7 @@ body {
     font-family: QuickJerk;
     font-optical-sizing: auto;
     text-shadow: 7px 6px 4px black;
-    margin-right: 260px;
+    margin-right: 290px;
 }
 
 .navbar h1 span {
@@ -98,7 +98,7 @@ nav ul li:hover {
 }
 
 .menu-button {
-    display: ;
+    display: none;
 }
 
 /* header */
