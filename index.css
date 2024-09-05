@@ -135,13 +135,18 @@ section .header-image-right{max-width:700px}
         width: 60px;
     }
 
+    .menu-btn .icon:hover {
+        transform: translateY(-5px);
+        width: 50px;
+    }
+
     .menu-mobile ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
         z-index: 9999px;
-        margin: 80px auto;
+        margin: 120px auto;
         margin-bottom: auto;
         background-color: #1c2f40;
         position:relative;
