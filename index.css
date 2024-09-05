@@ -3,50 +3,110 @@
 @font-face{font-family:ChildBold;src:url(./REFS/FONTS/Childhood-Bold.otf)}
 *{box-sizing:border-box;padding:0;margin:0}
 
-body
-{background:url(./midias/background-6.png);color:#fff}
+body {
+    background:url(./midias/background-6.png);
+    color:#fff;
+}
 
-.cabeçalho{max-width:1366px}
+.menu-desktop {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    background-image:url(./midias/background-6.png);
+    border:#f24171 solid;
+    box-shadow:10x 0x 10px #2c2c2c;
+    border-radius:20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
 
-.navbar h1{font-family:QuickJerk;font-optical-sizing:auto;text-shadow:7px 6px 4px #000;margin-left:-300px}
+/* CABEÇALHO */
 
-.navbar h1 span{color:#f24171}
+.interface .logo {
+    font-family: QuickJerk;
+    max-width: 800px;
+    font-size: 48px;
+    padding: 1%;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
 
-.navbar{background-image:url(./midias/background-6.png);border:#f24171 solid;padding:1rem;position:sticky;border-radius:20px;top:0;box-shadow:10x 0x 10px #2c2c2c;display:flex;text-align:center;justify-content:space-between;text-align:center;align-items:center}
+.interface .logo span {
+    color: #f24171;
+}
 
-nav ul li a{color:#fff;text-decoration:none;font-family:"Bangers";font-optical-sizing:auto;font-size:24px}
+header > .menu-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-.navbar ul{display:flex;list-style:none;align-items:center}
+.navbar > img {
+    max-width: px;
+}
 
-.nav-icon-container img{width:40px;cursor:pointer}
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-family:"Bangers";
+    font-optical-sizing:auto;
+    font-size:30px;
+}
 
-.nav-icon-container img:hover{transform:translateY(-2px);transition:all .2s;font-weight:700}
+header nav ul {
+    list-style-type: none;
+}
 
-nav ul li{color:#1c2f40;justify-content:space-between;margin-right:1.5rem;cursor:pointer}
+header nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+nav ul li{
+    color:#1c2f40;
+    justify-content:space-between;
+    cursor:pointer;
+    margin-right: 10px;
+}
 
 nav ul li:hover{transform:translateY(-2px);transition:all .2s;font-weight:700}
 
-.menu-button{display:none}
+.menu-button{
+    display:none;
+}
 
-header{display:flex;align-items:center;margin:0 auto;justify-content:center;text-align:center}
+.menu-mobile {
+    display: none;
+}
 
-header img{max-width:100%}
+.menu-btn {
+    display: none;
+}
 
-header .header-image-left{margin:-250px -150px -200px -100px;max-width:1200px}
+/* CABEÇALHO */
 
-header .header-image-right{max-width:700px}
+/* FOTOS */
 
-header{font-family:"Gloock",serif;font-optical-sizing:auto}
+section {display:flex;align-items:center;margin:0 auto;justify-content:center;text-align:center}
 
-header .header-bottom-side-left{position:relative}
+section img{max-width:100%}
 
-.header-bottom-side{display:flex;align-items:center;justify-content:center;padding:1rem}
+section .header-image-left{margin:0 -150px -100px -100px;max-width:1200px}
 
-.header-bottom-side-left{height:100%;flex-basis:50%}
+section .header-image-right{max-width:700px}
 
-.header-bottom-side-left h2{font-size:3rem;margin-bottom:1.5rem;font-weight:400}
+.header-bottom-side{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:1rem;
+}
 
-.header-bottom-side-left p{line-height:1.5rem;margin-bottom:1.5rem}
+/* FOTOS */
+
+/* AGENDA */
 
 .agenda-link h2{font-size:48px;margin:auto auto 10px}
 
@@ -58,25 +118,51 @@ header .header-bottom-side-left{position:relative}
 
 .agenda-link button:hover{background-color:#630744;transition:.2s}
 
-.header-inner-content p{font-size:24px}
+/* AGENDA */
+@media screen and (max-width: 960px) {
+    .menu-desktop ul {
+        display: none;
+    }
 
-@media screen and (max-width: 800px) {
-    
-    .navbar h1{margin-left: 0px;}
+    .menu-btn {
+        display: block;
+    }
 
-    .logo{font-size:1.2rem}
+    .menu-btn button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        width: 60px;
+    }
 
-    .menu-button{display:block}
+    .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        z-index: 9999px;
+        margin: 80px auto;
+        margin-bottom: auto;
+        background-color: #1c2f40;
+        position:relative;
+    }
 
-    .menu-button:hover{transform:translateY(-3px)}
+    .header-bottom-side {
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .menu-mobile .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
 
-    .header-bottom-side{flex-direction:column;text-align:center;padding-top:4rem}
+    .open {
+        display: block;
+    }
 
-    nav{position:absolute;background-color:#1c2f40;width:100%;top:46px;display:none}
-
-    .show-menu nav{display:block}nav ul{flex-direction:column}
-
-    nav ul li{text-align:center;padding:.8rem}}
+}
 
 main{font-family:"Fjalla One",sans-serif;font-optical-sizing:auto}
 
@@ -110,7 +196,7 @@ main h2{font-weight:400}
 
 .bio p{font-size:24px;margin:20px 0;text-align:center;margin:0 auto}
 
-#link-topo{text-decoration:none;color:#fff;background-color:#f24171;padding:10px;position:fixed;right:6px;bottom:10px;box-shadow:3px 3px 10px #2c2c2c}
+#link-topo{text-decoration:none;color:#fff;background-color:#f24171;padding:10px;position:fixed;right:6px;bottom:10px;box-shadow:3px 3px 10px #2c2c2c;z-index: 999px;}
 
 #link-topo:hover{transform:translateY(4px)}
 
@@ -141,7 +227,7 @@ main h2{font-weight:400}
 
 footer p{color:#fff}
 
-.links-rodape > div{display:flex;flex-direction:row;justify-content:center;align-items:center}
+.links-rodape > div{display:flex;flex-direction:row;justify-content:center;align-items:center;}
 
 .links-rodape p:hover{transform:translateY(-3px);transition:.2s}
 

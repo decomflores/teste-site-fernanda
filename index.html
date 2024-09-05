@@ -18,28 +18,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     </head>
 <body>
-    <div class="navbar show-menu">
-            <div class="menu-lista">
-                <nav>
+    <header>
+        <div class="interface">
+            <nav class="menu-desktop">
+                <div class="logo">
+                    <p>FERNANDA <span>ARANTES</span></p>
+                </div>  
+                <ul>
+                    <li><a href="#bio-redirect">Bio</a></li>                    
+                    <li><a href="https://casadeartistas.com.br/fernandaarantes/">Agenda</a></li>
+                    <li><a href="#shop-redirect">Loja</a></li>
+                    <li><a href="#form-redirect">Contato</a></li>                    
+                </ul>
+
+                <div class="menu-btn">
+                    <button onclick="menuShow()"><img class="icon" src="./midias/ICONES/menu_white_36dp.svg"></button>
+                </div>
+            </nav>
+
+            <div class="menu-mobile">
+                <nav class="list-mobile">
                     <ul>
-                        <li><a href="#bio-redirect">Bio</a></li>                    
-                        <li><a href="https://casadeartistas.com.br/fernandaarantes/">Agenda</a></li>
-                        <li><a href="#shop-redirect">Loja</a></li>
-                        <li><a href="#form-redirect">Contato</a></li>                    
+                        <li class="nav-item"><a href="#bio-redirect">Bio</a></li>                    
+                        <li class="nav-item"><a href="https://casadeartistas.com.br/fernandaarantes/">Agenda</a></li>
+                        <li class="nav-item"><a href="#shop-redirect">Loja</a></li>
+                        <li class="nav-item"><a href="#form-redirect">Contato</a></li>                    
                     </ul>
                 </nav>
-            </div>           
-            <div class="logo-escrito" style="text-align:center">
-                <h1>FERNANDA <span>ARANTES</span></h1>
-            </div> 
-            <div class="nav-icon-container">
-                <img src="./midias/menu.png" class="menu-button" />
             </div>
-    </div>
 
-    <header>
+        </div><!--interface-->
+    </header>
+    <section>
         <div class="header-inner-content">
             <div class="header-bottom-side">
                 <div class="header-image-left">
@@ -50,10 +64,9 @@
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- Conteúdo Principal -->
-
 
     <main>
         <div class="agenda-link">
@@ -118,30 +131,23 @@
                 </div>
             </div>
         </div>
+        <footer class="links-rodape">
+            <div class="links-instagram">
+                <a href="https://www.instagram.com/afernandaarantes/"><img src="./midias/insta-rodape-branco.png" /></a>
+                <p><a id="link-instagram" href="https://www.instagram.com/afernandaarantes/">@afernandaarantes</a></p>
+            </div>
+            <div class="links-tiktok">
+                <a href="https://www.tiktok.com/@afernandaarantes?_t=8pRiz0vcwxp&_r=1 "><img src="./midias/tiktok-rodape.png"></a>
+                <p><a id="link-tktk" href="https://www.tiktok.com/@afernandaarantes?_t=8pRiz0vcwxp&_r=1 ">@afernandaarantes</a></p>
+            </div>
+            <div class="links-youtube">
+                <a href="https://www.youtube.com/@fernandaarantes5818"><img src="./midias/yt-rodape-ver.png"></a>
+                <p><a id="link-yt" href="https://www.youtube.com/@fernandaarantes5818">@fernandaarantes5818</a></p>
+            </div>
+        </footer>
+        <a id="link-topo" href="#">&#9650</a>
     </main>
-    <footer class="links-rodape">
-        <div class="links-instagram">
-            <a href="https://www.instagram.com/afernandaarantes/"><img src="./midias/insta-rodape-branco.png" /></a>
-            <p><a id="link-instagram" href="https://www.instagram.com/afernandaarantes/">@afernandaarantes</a></p>
-        </div>
-        <div class="links-tiktok">
-            <a href="https://www.tiktok.com/@afernandaarantes?_t=8pRiz0vcwxp&_r=1 "><img src="./midias/tiktok-rodape.png"></a>
-            <p><a id="link-tktk" href="https://www.tiktok.com/@afernandaarantes?_t=8pRiz0vcwxp&_r=1 ">@afernandaarantes</a></p>
-        </div>
-        <div class="links-youtube">
-            <a href="https://www.youtube.com/@fernandaarantes5818"><img src="./midias/yt-rodape-ver.png"></a>
-            <p><a id="link-yt" href="https://www.youtube.com/@fernandaarantes5818">@fernandaarantes5818</a></p>
-        </div>
-    </footer>
 
-    <script>
-        const navbar = document.querySelector(".navbar");
-        const menuButton = document.querySelector(".menu-button")
-
-        menuButton.addEventListener('click', () => {
-            navbar.classList.toggle("show-menu");
-        });        
-    </script>
-    <a id="link-topo" href="#">&#9650</a>
+    <script src="script.js"></script>
 </body>
 </html>
