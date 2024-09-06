@@ -28,7 +28,7 @@ body {
 .interface .logo {
     font-family: QuickJerk;
     max-width: 800px;
-    font-size: 40px;
+    font-size: 32px;
     padding: 1%;
     text-shadow: black 0.1em 0.1em 0.2em;
 }
