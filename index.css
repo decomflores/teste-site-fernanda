@@ -248,3 +248,11 @@ footer p{color:#fff}
 .links-youtube img{max-width:27px;margin:0 10px}
 
 .links-rodape{background-image:url(./midias/background-6.png);border:#f24171 solid;padding:1rem;position:sticky;border-radius:20px;top:0;box-shadow:10x 0x 10px #2c2c2c;z-index:99}
+
+.copyright p{
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto;
+}
